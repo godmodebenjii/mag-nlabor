@@ -1,0 +1,116 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+body {
+    font-family:'Open Sans', sans-serif;
+    margin: 0;
+    
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: #4183c8;
+    color: #FFF;
+    padding: -60px; /* Adjust the padding to set the desired height */
+    text-align: center;
+    z-index: 100; /* Ensure the navigation bar is above the images */
+}
+
+nav {
+    background-color: #333;
+    overflow: hidden;
+    margin-top: 10px; /* Adjust this value based on the height of your header */
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav a:hover {
+    background-color: dodgerblue;
+    color: black;
+    transition: background-color 0.5s, color 0.5s; /* Hozzáadva: hover transition */
+}
+
+nav a {
+    float: left;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 16px;
+    transition: background-color 0.5s, color 0.5s; /* Hozzáadva: alapértelmezett transition */
+    border-radius: 2px;
+}
+
+nav a:not(:hover) {
+    background-color: #333; /* Hozzáadva: visszaállítja az eredeti háttérszínt */
+    color: #FFF; /* Hozzáadva: visszaállítja az eredeti szövegszínt */
+    transition: background-color 0.5s, color 0.5s; /* Módosítva: alapértelmezett transition */
+}
+
+
+/* Add your existing slideshow styles here */
+
+.navbar-logo img {
+    width: 40px; /* Példa: Állítsd be a logó szélességét */
+    height: 40px; /* Automatikusan számolja ki a magasságot a szélesség alapján */
+}
+
+#maganlaborszoveglogomellett{
+    margin-left: -20px;
+    margin-left: 1px;
+}
+
+#webshopkozepre{
+    margin-top: 10px;
+}
+
+#nextPageButton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    background-color: cornflowerblue;
+    color: #fff;
+    padding: 10px 20px;  
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer; 
+    font-weight: bold;
+    transition: transform 0.4s ease-in-out, background-color 0.4s ease; /* Hozzáadva: background-color transition */
+    margin-left: -7%;
+    margin-bottom: 0%;
+}
+
+#nextPageButton {
+transition: transform 0.5s ease;
+}
+
+#nextPageButton:hover {
+    transform: scale(1.1);
+    background-color: #F50000; /* Hozzáadva: új szín hover esetén */
+    transition: transform ease 1s, background-color ease 1.5s; /* Módosítva: background-color transition hozzáadva */
+}
+
+#nextPageButton:not(:hover) {
+    background-color:  cornflowerblue; /* Hozzáadva: visszaállítja az eredeti színt */
+    transition: transform ease-in-out 1s, background-color ease 1.5s; /* Módosítva: csak a background-color áttűnést alkalmazza */
+}
+
+button:hover {
+transform: translateY(-5px);
+}
